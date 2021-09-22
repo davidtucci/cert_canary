@@ -1,0 +1,20 @@
+.r {
+    background-color: red;
+}
+
+.y {
+    background-color: yellow;
+}
+
+.g {
+    background-color: lightgreen;
+}
+
+table,
+td {
+  padding: .3rem;
+}
+
+.hidden {
+  display: none;
+}
