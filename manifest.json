@@ -17,11 +17,5 @@
     "permissions": ["webNavigation", "webRequest", "webRequestBlocking", "<all_urls>"],
     "background":{
         "scripts": [ "background.js" ]
-    },
-    "content_scripts": [
-        {
-            "matches": ["https://*/*"],
-            "js": ["canary.js"]
-        }
-    ]
+    }
 }
