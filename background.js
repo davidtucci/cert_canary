@@ -14,7 +14,7 @@
     Home: https://github.com/davidtucci/cert_canary
 */
 "use strict";
-
+var browser = browser || chrome;
 var validityInfo = {};
 
 async function checkCert(details) {

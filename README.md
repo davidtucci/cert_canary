@@ -6,5 +6,9 @@ A yellow warning box will appear if a page results in a request served with a ce
 
 Clicking on the canary icon will show a list of domains the page has requested, color coded based on the time to their certificate expiration.
 
+### Chrome support
+
+Chrome does not currently expose the necessary information regarding TLS connections. There's an outstanding bug filed on the Chromium project, since 2016. https://issues.chromium.org/issues/41264310
+
 ### License
 Cert Canary is distributed under the GPLv3
