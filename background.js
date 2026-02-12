@@ -60,6 +60,27 @@ function clearForTab(details){
   }
 }
 
+function updateIcon() {
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  browser.browserAction.setIcon({
+    path: isDark
+      ? {
+          16: "icons/yellow16.png",
+          32: "icons/yellow32.png"
+        }
+      : {
+          16: "icons/canary16.png",
+          32: "icons/canary32.png"
+        }
+  });
+}
+
+updateIcon();
+
+window.matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", updateIcon);
+
 browser.webRequest.onHeadersReceived.addListener(checkCert, {
     urls: ["<all_urls>"]
   },
